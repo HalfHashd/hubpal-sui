@@ -81,6 +81,16 @@ This project directly targets the following sponsor tracks:
 Project by **HubPal.org**  
 Hackathon Demo 2025
 
+---
+
+## Additional Resources
+
+📖 **Earlier Project Documentation:**  
+For more background on the HubPal project (business model, extended description, and initial design notes), see the original README here:  
+👉 [https://github.com/HalfHashd/hubpal](https://github.com/HalfHashd/hubpal)
+
+ℹ️ This current repository (`hubpal_v2`) is the live hackathon demo build created with [v0.app](https://v0.app) and deployed on [Vercel](https://vercel.com).
+
 ================================= 
 ================================= 
 Below was created by teh V0.app - I am saving it by pushing it down. (08.17.22025. 2:52 am)
