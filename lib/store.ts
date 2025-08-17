@@ -2,69 +2,77 @@ import type { Project, Milestone } from "./types"
 import { slugify } from "./utils"
 
 const STORAGE_KEY = "hubpal_v2"
+const SEEDED_KEY = "hubpal_v2_seeded"
 
 function createDemoProjects(): Project[] {
   const demoProjects = [
     {
-      name: "Solar Farm Buildout",
-      description: "Building a 50MW solar farm to power 15,000 homes with clean renewable energy.",
-      totalBudget: 120000,
-      milestones: ["Planning", "Permits", "Construction", "Grid Connection"],
+      name: "Alice's Restaurant",
+      description: "Renovating a classic family restaurant with modern amenities and expanded seating capacity.",
+      totalBudget: 80000,
+      milestones: ["Planning", "Prototype", "MVP", "Production"],
+      completionRates: [1, 1, 0.5, 0], // Planning and Prototype done, MVP in progress
     },
     {
-      name: "Community Café",
-      description: "Opening a neighborhood café that serves locally sourced food and supports local artists.",
-      totalBudget: 45000,
-      milestones: ["Business Plan", "Location Setup", "Equipment", "Grand Opening"],
+      name: "Solar Farm Alpha",
+      description: "Building a 100MW solar farm to provide clean energy to 30,000 homes in the region.",
+      totalBudget: 250000,
+      milestones: ["Site Survey", "Permits", "Construction", "Grid Connection", "Operations"],
+      completionRates: [1, 1, 1, 0, 0], // First 3 milestones complete
     },
     {
-      name: "DeFi Analytics App",
-      description: "Real-time analytics dashboard for DeFi protocols with portfolio tracking and yield optimization.",
-      totalBudget: 85000,
-      milestones: ["MVP Development", "Beta Testing", "Security Audit", "Public Launch"],
-    },
-    {
-      name: "Charity Water Well",
+      name: "Community Well",
       description: "Drilling clean water wells in rural communities to provide access to safe drinking water.",
       totalBudget: 35000,
-      milestones: ["Site Survey", "Drilling", "Pump Installation", "Community Training"],
+      milestones: ["Site Survey", "Drilling", "Pump Installation"],
+      completionRates: [1, 0, 0], // Only site survey complete
     },
     {
-      name: "VR Learning Hub",
-      description: "Immersive VR educational platform for STEM subjects with interactive 3D simulations.",
+      name: "MoonBags",
+      description: "Decentralized portfolio tracking app with advanced analytics and yield farming optimization.",
+      totalBudget: 120000,
+      milestones: ["Planning", "Prototype", "MVP", "Production"],
+      completionRates: [1, 1, 1, 1], // All milestones complete
+    },
+    {
+      name: "Art Studio Renovation",
+      description: "Converting an old warehouse into a modern art studio with gallery space and artist workshops.",
       totalBudget: 95000,
-      milestones: ["Content Creation", "VR Development", "User Testing", "School Partnerships"],
+      milestones: ["Planning", "Prototype", "MVP", "Production"],
+      completionRates: [1, 1, 0, 0], // Planning and Prototype done
     },
     {
-      name: "Local Restaurant Remodel",
-      description: "Complete renovation of family restaurant with modern kitchen and expanded seating.",
-      totalBudget: 65000,
-      milestones: ["Design Phase", "Permits & Demo", "Construction", "Final Touches"],
+      name: "Open-Source Dev Tool",
+      description: "Building a comprehensive development toolkit for blockchain developers with IDE integration.",
+      totalBudget: 60000,
+      milestones: ["Core Development", "Beta Testing", "Public Release"],
+      completionRates: [1, 0.5, 0], // Core done, beta in progress
     },
   ]
 
   return demoProjects.map((demo, index) => {
     const slug = slugify(demo.name)
-    const milestoneAmounts = [
-      Math.floor(demo.totalBudget * 0.2),
-      Math.floor(demo.totalBudget * 0.25),
-      Math.floor(demo.totalBudget * 0.3),
-      demo.totalBudget - Math.floor(demo.totalBudget * 0.75), // Remaining amount
-    ]
+    const milestoneCount = demo.milestones.length
+    const baseAmount = Math.floor(demo.totalBudget / milestoneCount)
+    const remainder = demo.totalBudget - baseAmount * milestoneCount
 
     const milestones: Milestone[] = demo.milestones.map((title, i) => {
       const milestoneSlug = slugify(title)
-      // Random completion states - some projects more complete than others
-      const completionRate = Math.random()
+      const amount = i === milestoneCount - 1 ? baseAmount + remainder : baseAmount
+
+      // Use predefined completion rates
+      const completionRate = demo.completionRates[i]
       let status: "pending" | "completed" | "verified" = "pending"
-      if (i < Math.floor(demo.milestones.length * completionRate)) {
-        status = Math.random() > 0.7 ? "verified" : "completed"
+      if (completionRate === 1) {
+        status = Math.random() > 0.3 ? "verified" : "completed"
+      } else if (completionRate > 0) {
+        status = "completed"
       }
 
       return {
         id: `milestone-${index}-${i}`,
         title,
-        amount: milestoneAmounts[i],
+        amount,
         status,
         ensName: `${milestoneSlug}.${slug}.hubpal.eth`,
         mirrorUrl: `/eth/${slug}/${milestoneSlug}`,
@@ -83,10 +91,20 @@ function createDemoProjects(): Project[] {
       totalBudget: demo.totalBudget,
       milestones,
       fundsRaised,
-      lastUpdated: Date.now() - Math.floor(Math.random() * 7 * 24 * 60 * 60 * 1000), // Random time in last week
+      lastUpdated: Date.now() - Math.floor(Math.random() * 7 * 24 * 60 * 60 * 1000),
       activity: [],
     }
   })
+}
+
+function isSeeded(): boolean {
+  if (typeof window === "undefined") return false
+  return localStorage.getItem(SEEDED_KEY) === "true"
+}
+
+function markAsSeeded(): void {
+  if (typeof window === "undefined") return
+  localStorage.setItem(SEEDED_KEY, "true")
 }
 
 class HubPalStore {
@@ -94,10 +112,6 @@ class HubPalStore {
 
   constructor() {
     this.loadFromStorage()
-    if (this.projects.length === 0) {
-      this.projects = createDemoProjects()
-      this.saveToStorage()
-    }
   }
 
   private loadFromStorage(): void {
@@ -167,6 +181,18 @@ class HubPalStore {
       }
     }
   }
+
+  seedDemoProjects(): void {
+    if (this.projects.length === 0) {
+      this.projects = createDemoProjects()
+      this.saveToStorage()
+      markAsSeeded()
+    }
+  }
+
+  isEmpty(): boolean {
+    return this.projects.length === 0
+  }
 }
 
 // Singleton instance
@@ -179,3 +205,6 @@ export const updateProject = (projectId: string, patch: Partial<Project>) => sto
 export const getProjectBySlug = (slug: string) => store.getProjectBySlug(slug)
 export const markMilestone = (projectId: string, milestoneId: string, patch: Partial<Milestone>) =>
   store.markMilestone(projectId, milestoneId, patch)
+export const seedDemoProjects = () => store.seedDemoProjects()
+export const isStoreEmpty = () => store.isEmpty()
+export const isAlreadySeeded = () => isSeeded()
