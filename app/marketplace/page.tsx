@@ -1,7 +1,10 @@
 "use client"
 
+import type React from "react"
+
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
@@ -18,6 +21,7 @@ export default function MarketplacePage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [activeFilter, setActiveFilter] = useState<FilterType>("all")
   const [showLoadDemo, setShowLoadDemo] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     const loadProjects = () => {
@@ -86,6 +90,12 @@ export default function MarketplacePage() {
     const allProjects = getProjects()
     setProjects(allProjects)
     setShowLoadDemo(false)
+  }
+
+  const handleQBClick = (e: React.MouseEvent, projectSlug: string) => {
+    e.stopPropagation()
+    e.preventDefault()
+    router.push(`/quickbooks?project=${projectSlug}`)
   }
 
   return (
@@ -198,10 +208,9 @@ export default function MarketplacePage() {
                         variant="outline"
                         size="sm"
                         className="text-xs px-2 py-1 h-6 bg-transparent"
-                        asChild
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e) => handleQBClick(e, project.slug)}
                       >
-                        <Link href={`/quickbooks?project=${project.slug}`}>QB</Link>
+                        QB
                       </Button>
                     </div>
                   </div>
