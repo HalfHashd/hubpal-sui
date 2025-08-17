@@ -101,6 +101,43 @@ For more background on the HubPal project (business model, extended description,
 
 ℹ️ This current repository (`hubpal_v2`) is the live hackathon demo build created with [v0.app](https://v0.app) and deployed on [Vercel](https://vercel.com).
 
+<p align="center">
+  <img src="assets/HubPal_difference.png" alt="HubPal difference" width="70%">
+</p>
+
+<p align="center">
+  <img src="assets/HubPal_screenshot_home.png" alt="HubPal Home Screenshot" width="70%">
+</p>
+
+<p align="center">
+  <img src="assets/HubPal_final_home-page.png" alt="HubPal Final Home Page" width="70%">
+</p>
+
+<p align="center">
+  <img src="assets/HubPal_screenshot_ChainLink.png" alt="HubPal Chainlink Screenshot" width="70%">
+</p>
+
+<p align="center">
+  <img src="assets/HubPal_screenshot_ChainLink2.png" alt="HubPal Chainlink Screenshot 2" width="70%">
+</p>
+
+<p align="center">
+  <img src="assets/HubPal_screenshot_pyusd.png" alt="HubPal PYUSD Screenshot" width="70%">
+</p>
+
+<p align="center">
+  <img src="assets/HubPal_screenshot_create_project.png" alt="HubPal Create Project Screenshot" width="70%">
+</p>
+
+<p align="center">
+  <img src="assets/HubPal_screenshot_Walrus.png" alt="HubPal Walrus Screenshot" width="70%">
+</p>
+
+<p align="center">
+  <img src="assets/HubPal_screenshot_sponsor demos.png" alt="HubPal Sponsor Demos Screenshot" width="70%">
+</p>
+
+
 ================================= 
 ================================= 
 Below was created by teh V0.app - I am saving it by pushing it down. (08.17.22025. 2:52 am)
