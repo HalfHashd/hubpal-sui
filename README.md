@@ -210,7 +210,6 @@ For more background on the HubPal project (business model, extended description,
   <img src="assets/HubPal_screenshot_sponsor demos.png" alt="HubPal Sponsor Demos Screenshot" width="70%">
 </p>
 
-
 ================================= 
 ================================= 
 Below was created by teh V0.app - I am saving it by pushing it down. (08.17.22025. 2:52 am)
@@ -245,3 +244,36 @@ Continue building your app on:
 2. Deploy your chats from the v0 interface
 3. Changes are automatically pushed to this repository
 4. Vercel deploys the latest version from this repository
+
+Thank you. 
+**Have your AI call my AI sometimes...**
+
+--- 
+This README contains two sections: 
+1. **Project Overview** – a detailed description of …………. and its intended use.  
+2. **License & Notices** – patent, usage restrictions, and licensing terms.
+
+For inquiries, contact:  
+Email: 1@1000x10.com  
+dba: HalfHashd<sup>™</sup>
+
+The HalfHashd welcomes inquiries for partnerships, licensing arrangements, and collaborative developments. Public good, government, and educational uses are invited to inquire for free use considerations.
+
+## 2. License & Notices
+
+### COPYRIGHT NOTICE
+
+### MIT License + Commons Clause Restriction
+Copyright (c) 2025 HalfHashd (dba)
+---
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, merge, publish, and distribute the Software for personal, educational, or non-commercial purposes, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Certain aspects of this software and/or its underlying methods are patent pending. 
+
+**Commercial Use Restriction:**  
+The "Commons Clause" License Condition v1.0 is hereby added to the MIT License: 
+You may not sell, rent, lease, offer as a service, or otherwise use the Software for a commercial purpose without express prior written permission from the copyright holder, except where specific free use permission is granted for public-interest or educational projects.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
