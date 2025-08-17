@@ -3,6 +3,7 @@ import { slugify } from "./utils"
 
 const STORAGE_KEY = "hubpal_v2"
 const SEEDED_KEY = "hubpal_v2_seeded"
+const QB_DEMO_SEEDED_KEY = "hubpal_v2_qb_demo_seeded"
 
 function createDemoProjects(): Project[] {
   const demoProjects = [
@@ -107,11 +108,22 @@ function markAsSeeded(): void {
   localStorage.setItem(SEEDED_KEY, "true")
 }
 
+function isQBDemoSeeded(): boolean {
+  if (typeof window === "undefined") return false
+  return localStorage.getItem(QB_DEMO_SEEDED_KEY) === "true"
+}
+
+function markQBDemoAsSeeded(): void {
+  if (typeof window === "undefined") return
+  localStorage.setItem(QB_DEMO_SEEDED_KEY, "true")
+}
+
 class HubPalStore {
   private projects: Project[] = []
 
   constructor() {
     this.loadFromStorage()
+    this.seedQBDemo()
   }
 
   private loadFromStorage(): void {
@@ -202,6 +214,34 @@ class HubPalStore {
       this.projects = createDemoProjects()
       this.saveToStorage()
       markAsSeeded()
+    }
+  }
+
+  private seedQBDemo(): void {
+    if (isQBDemoSeeded()) return
+
+    const aliceProject = this.projects.find((p) => p.name === "Alice's Restaurant")
+    if (aliceProject) {
+      const prototypeMilestone = aliceProject.milestones.find((m) => m.title === "Prototype")
+      if (prototypeMilestone) {
+        // Set QB sign-off metadata
+        if (!prototypeMilestone.meta) prototypeMilestone.meta = {}
+        prototypeMilestone.meta.qbSignedOff = true
+        prototypeMilestone.meta.qbEventId = "QB-DEMO-001"
+
+        // Add activity log
+        if (!aliceProject.activity) aliceProject.activity = []
+        aliceProject.activity.unshift({
+          timestamp: Date.now(),
+          actor: "system",
+          action: "QuickBooks Integration",
+          details: "QuickBooks: Sign-Off recorded for Prototype (preloaded demo)",
+        })
+
+        aliceProject.lastUpdated = Date.now()
+        this.saveToStorage()
+        markQBDemoAsSeeded()
+      }
     }
   }
 
