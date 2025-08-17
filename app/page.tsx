@@ -9,7 +9,9 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
             ENS Projects–Crowdfunding Marketplace and Platform
           </h1>
-          <p className="text-xl text-muted-foreground">Powered by HubPal™.org</p>
+          <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent drop-shadow-sm py-2 border-b border-gray-200 inline-block px-4">
+            Powered by HubPal™.org
+          </div>
         </div>
 
         <section className="space-y-6">
