@@ -63,9 +63,9 @@ Think of HubPal as a **“Shopify for projects & crowdfunding”** — where eve
 ---
 
 ## 🏗️ How It’s Made
-- The concept was developed with **ChatGPT** over several months.  
+- The "decentralized commerce platform" concept was researched, evolved, and developed over many months. I typically use 2 to 3, and recently 4 (Grok was added) LLM AIs - giving the same prompt to all 3 or 4 to get their different respective responses. I had been looking for a unique use of ENS for 3+ years actually, after meeting them at ETHSF hackathon. Also I have been studying the uses of ChainLink for offchain and RW events. And that PayPal is one of the early payment systems to integrate crypto and stablecoin was of interest to me as well. Few days before the hackathon, I got the idea to use ENS for projects.   
 - For the hackathon, we pivoted 3 days before kickoff to focus on **ENS + Chainlink** integration.  
-- Judges/tips from Chainlink team suggested using **v0.app (AI coding tool)** to accelerate build.  
+- The staff/tips from Chainlink team suggested using **v0.app (AI coding tool)** to accelerate build.  
 - Built 100% AI-assisted:  
   - ChatGPT wrote the **prompts**  
   - v0.app generated the **code + UI**  
