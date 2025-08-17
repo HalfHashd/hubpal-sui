@@ -1,7 +1,38 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { getProjects } from "@/lib/store"
+import type { Project } from "@/lib/types"
 
 export default function HomePage() {
+  const [recentProjects, setRecentProjects] = useState<Project[]>([])
+
+  useEffect(() => {
+    const projects = getProjects()
+    const sortedProjects = projects.sort((a, b) => b.lastUpdated - a.lastUpdated).slice(0, 3)
+    setRecentProjects(sortedProjects)
+  }, [])
+
+  const calculateProgress = (project: Project) => {
+    const completedMilestones = project.milestones.filter((m) => m.status === "completed" || m.status === "verified")
+    return `${completedMilestones.length}/${project.milestones.length}`
+  }
+
+  const formatRelativeTime = (timestamp: number) => {
+    const now = Date.now()
+    const diff = now - timestamp
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+
+    if (days === 0) return "Today"
+    if (days === 1) return "Yesterday"
+    if (days < 7) return `${days} days ago`
+    if (days < 30) return `${Math.floor(days / 7)} weeks ago`
+    return `${Math.floor(days / 30)} months ago`
+  }
+
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center space-y-8">
@@ -25,6 +56,34 @@ export default function HomePage() {
             </Button>
           </div>
         </section>
+
+        {recentProjects.length > 0 && (
+          <section className="space-y-6 max-w-2xl mx-auto">
+            <h2 className="text-2xl font-semibold">Recently Updated</h2>
+            <div className="space-y-4">
+              {recentProjects.map((project) => (
+                <Card key={project.id} className="text-left">
+                  <CardContent className="p-4">
+                    <div className="flex justify-between items-center">
+                      <div className="space-y-1">
+                        <Link
+                          href={`/project/${project.slug}`}
+                          className="font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          {project.name}
+                        </Link>
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                          <span>Progress {calculateProgress(project)}</span>
+                          <span>Updated {formatRelativeTime(project.lastUpdated)}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </div>
   )
