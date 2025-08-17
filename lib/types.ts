@@ -8,6 +8,13 @@ export interface Milestone {
   artifactWalrusId?: string
 }
 
+export interface ActivityEntry {
+  timestamp: number
+  actor: "user"
+  action: string
+  details: string
+}
+
 export interface Project {
   id: string
   slug: string
@@ -17,4 +24,5 @@ export interface Project {
   milestones: Milestone[]
   fundsRaised: number
   lastUpdated: number
+  activity: ActivityEntry[]
 }

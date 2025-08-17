@@ -58,7 +58,19 @@ class HubPalStore {
     if (project) {
       const milestone = project.milestones.find((m) => m.id === milestoneId)
       if (milestone) {
+        const oldStatus = milestone.status
         Object.assign(milestone, patch)
+
+        if (patch.status && patch.status !== oldStatus) {
+          if (!project.activity) project.activity = []
+          project.activity.unshift({
+            timestamp: Date.now(),
+            actor: "user",
+            action: `Milestone ${patch.status}`,
+            details: `"${milestone.title}" marked as ${patch.status}`,
+          })
+        }
+
         project.lastUpdated = Date.now()
         this.saveToStorage()
       }
