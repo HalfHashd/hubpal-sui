@@ -92,9 +92,14 @@ export default function MarketplacePage() {
     <div className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">Marketplace</h1>
-        <Button asChild>
-          <Link href="/create">Create New Project</Link>
-        </Button>
+        <div className="flex gap-3 items-center">
+          <Button variant="outline" size="sm" asChild>
+            <Link href="/quickbooks">QuickBooks Demo</Link>
+          </Button>
+          <Button asChild>
+            <Link href="/create">Create New Project</Link>
+          </Button>
+        </div>
       </div>
 
       <div className="mb-6 space-y-4">
@@ -174,11 +179,22 @@ export default function MarketplacePage() {
                     <p className="text-sm font-medium">
                       Raised {formatBudget(project.fundsRaised)} / {formatBudget(project.totalBudget)}
                     </p>
-                    {project.fundsRaised >= project.totalBudget && (
-                      <Badge variant="secondary" className="text-xs">
-                        Funded
-                      </Badge>
-                    )}
+                    <div className="flex gap-2 items-center">
+                      {project.fundsRaised >= project.totalBudget && (
+                        <Badge variant="secondary" className="text-xs">
+                          Funded
+                        </Badge>
+                      )}
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="text-xs px-2 py-1 h-6 bg-transparent"
+                        asChild
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <Link href={`/quickbooks?project=${project.slug}`}>QB</Link>
+                      </Button>
+                    </div>
                   </div>
 
                   <p className="text-xs text-muted-foreground">Updated {formatRelativeTime(project.lastUpdated)}</p>

@@ -6,6 +6,10 @@ export interface Milestone {
   ensName: string
   mirrorUrl: string
   artifactWalrusId?: string
+  meta?: {
+    qbSignedOff?: boolean
+    qbEventId?: string
+  }
 }
 
 export interface ActivityEntry {
