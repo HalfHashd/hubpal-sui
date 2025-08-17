@@ -89,6 +89,16 @@ Hackathon Demo 2025
 For more background on the HubPal project (business model, extended description, and initial design notes), see the original README here:  
 👉 [https://github.com/HalfHashd/hubpal](https://github.com/HalfHashd/hubpal)
 
+<p align="center">
+  <img src="assets/Gemini_Image5.png" alt="HubPal logo" width="20%">
+</p>
+
+<h3 align="center">Mission: Don't we all want responsible projects? Make the world safe from dumps and rugs!</h3>
+</p>
+<p align="center">
+  <img src="assets/kids-dumps-upside down 30k.png" alt="HubPal mockup" width="18%">
+</p>
+
 ℹ️ This current repository (`hubpal_v2`) is the live hackathon demo build created with [v0.app](https://v0.app) and deployed on [Vercel](https://vercel.com).
 
 ================================= 
