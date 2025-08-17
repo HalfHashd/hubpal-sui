@@ -153,6 +153,8 @@ export default function MarketplacePage() {
             (m) => m.status === "completed" || m.status === "verified",
           ).length
 
+          const hasQBSignOff = project.milestones.some((m) => m.meta?.qbSignedOff === true)
+
           return (
             <Link key={project.id} href={`/project/${project.slug}`}>
               <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer">
@@ -160,7 +162,14 @@ export default function MarketplacePage() {
                   <div className="w-full h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-md mb-3 flex items-center justify-center">
                     <div className="text-3xl font-bold text-gray-500">{project.name.charAt(0)}</div>
                   </div>
-                  <CardTitle className="text-lg leading-tight">{project.name}</CardTitle>
+                  <div className="flex items-start justify-between">
+                    <CardTitle className="text-lg leading-tight flex-1">{project.name}</CardTitle>
+                    {hasQBSignOff && (
+                      <Badge variant="outline" className="ml-2 text-xs bg-yellow-100 text-yellow-800 border-yellow-300">
+                        QB sign-off pending
+                      </Badge>
+                    )}
+                  </div>
                   <p className="text-sm text-muted-foreground line-clamp-2">
                     {project.description.length > 80
                       ? `${project.description.substring(0, 80)}...`

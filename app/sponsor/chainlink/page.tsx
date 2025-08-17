@@ -220,7 +220,12 @@ export default function ChainlinkDemoPage() {
       <div className="space-y-6">
         <Card>
           <CardHeader>
-            <CardTitle>QuickBooks Ingest Queue</CardTitle>
+            <CardTitle className="flex items-center justify-between">
+              QuickBooks Ingest Queue
+              <Badge variant="outline" className="text-sm">
+                Pending QB events: {qbIngestQueue.length}
+              </Badge>
+            </CardTitle>
             <CardDescription>Process QB-signed milestones via Chainlink Functions</CardDescription>
           </CardHeader>
           <CardContent>
