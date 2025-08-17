@@ -182,6 +182,21 @@ class HubPalStore {
     }
   }
 
+  addActivity(projectId: string, details: string): void {
+    const project = this.projects.find((p) => p.id === projectId)
+    if (project) {
+      if (!project.activity) project.activity = []
+      project.activity.unshift({
+        timestamp: Date.now(),
+        actor: "system",
+        action: "External Event",
+        details,
+      })
+      project.lastUpdated = Date.now()
+      this.saveToStorage()
+    }
+  }
+
   seedDemoProjects(): void {
     if (this.projects.length === 0) {
       this.projects = createDemoProjects()
@@ -205,6 +220,7 @@ export const updateProject = (projectId: string, patch: Partial<Project>) => sto
 export const getProjectBySlug = (slug: string) => store.getProjectBySlug(slug)
 export const markMilestone = (projectId: string, milestoneId: string, patch: Partial<Milestone>) =>
   store.markMilestone(projectId, milestoneId, patch)
+export const addActivity = (projectId: string, details: string) => store.addActivity(projectId, details)
 export const seedDemoProjects = () => store.seedDemoProjects()
 export const isStoreEmpty = () => store.isEmpty()
 export const isAlreadySeeded = () => isSeeded()
