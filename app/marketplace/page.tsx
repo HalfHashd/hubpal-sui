@@ -98,6 +98,15 @@ export default function MarketplacePage() {
     router.push(`/quickbooks?project=${projectSlug}`)
   }
 
+  const handleResetDemo = () => {
+    localStorage.removeItem("hubpal_v2")
+    localStorage.removeItem("hubpal_v2_qb_demo_seeded")
+    seedDemoProjects()
+    const allProjects = getProjects()
+    setProjects(allProjects)
+    setShowLoadDemo(false)
+  }
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-8">
@@ -228,6 +237,15 @@ export default function MarketplacePage() {
           <p className="text-muted-foreground">No projects match your current filters.</p>
         </div>
       )}
+
+      <div className="text-center mt-12 pt-8 border-t border-gray-200">
+        <button
+          onClick={handleResetDemo}
+          className="text-xs text-gray-400 hover:text-gray-600 underline transition-colors"
+        >
+          Reset Demo Data
+        </button>
+      </div>
     </div>
   )
 }
