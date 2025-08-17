@@ -2,7 +2,7 @@
   <img src="assets/HubPal_difference.png" alt="HubPal logo" width="60%">
 </p>
 
-# HubPal_v2 — ENS + Chainlink “Shopify for Projects & Crowdfunding”
+# HubPal_v2 — ENS + Chainlink + PYUSD “Shopify for Projects & Crowdfunding”
 
 [Live Demo on Vercel](https://vercel.com/halfhashds-projects/v0-hub-pal-2)  
 [GitHub Repository](https://github.com/HalfHashd/hubpal_v2)  
