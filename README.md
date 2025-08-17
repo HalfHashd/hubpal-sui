@@ -1,32 +1,105 @@
-# HubPal_v2
+<p align="center">
+  <img src="assets/HubPal_difference.png" alt="HubPal logo" width="60%">
+</p>
 
-**ENS + Chainlink “Shopify for Projects & Crowdfunding” Demo**  
-Hackathon Submission  
+# HubPal_v2 — ENS + Chainlink “Shopify for Projects & Crowdfunding”
+
+[Live Demo on Vercel](https://vercel.com/halfhashds-projects/v0-hub-pal-2)  
+[GitHub Repository](https://github.com/HalfHashd/hubpal_v2)  
 
 ---
 
-## 🚀 Overview
-HubPal_v2 is a decentralized **project creation, curation, and crowdfunding platform**.  
-Think of it as **Shopify for projects** — anyone can create, manage, and fund projects with milestone-based accountability.  
+## 🌍 Overview
+**HubPal** is a decentralized **project creation, crowdfunding, and milestone management platform**.  
 
-Key features:  
-- **ENS for Projects & Milestones**  
-  - Each project and milestone gets an ENS subdomain.  
-  - Identity everywhere: addresses auto-resolve to ENS names in the UI.  
+- **ENS**: Each project and milestone gets its own ENS subdomain.  
+- **Chainlink**: Validates deliverables using QuickBooks / real-world data feeds.  
+- **PYUSD (PayPal stablecoin)**: Enables staking + milestone payments, with installment/credit-style models.  
+- **Walrus (Sui storage)**: Decentralized storage for critical data and proofs.  
 
-- **Chainlink Oracles**  
-  - Certify Web2 + real-world events.  
-  - Milestones update automatically when QuickBooks-style deliverables are marked complete.  
+Think of HubPal as a **“Shopify for projects & crowdfunding”** — where every deliverable, milestone, and fund release is tracked transparently.
 
-- **PYUSD + USDC Payments**  
-  - Milestone-based funding releases.  
-  - Installment-style “Pay Over Time” model for services (adapted from PayPal).  
+---
 
-- **Walrus Decentralized Storage**  
-  - Store project docs, invoices, and media in a distributed way.  
+## ✨ Key Features
+- **ENS Integration**  
+  Projects auto-mint ENS subdomains for milestones, suppliers, lenders, auditors.  
+- **Chainlink Data Feeds**  
+  QuickBooks/Shopify events trigger milestone completions + fund releases.  
+- **Project Marketplace**  
+  OpenSea-style tiles showing active projects, milestones, progress, and funding.  
+- **Payments**  
+  PYUSD for staking & milestone payouts. Installment/“Pay Over Time” models for services.  
+- **Stretch Goals**  
+  Oracles and CCIP endpoints with their own ENS identities + staking mechanisms.  
 
-- **QuickBooks-style Web2 Feed (Demo)**  
-  - Real-world invoice/approval → triggers Chainlink → updates milestones → visible in marketplace.  
+---
+
+## 🛠️ Tech Stack
+- **Language**: TypeScript (auto-generated via [v0.app](https://v0.app) AI builder).  
+- **Frameworks**: React + Next.js (via v0.app / Vercel).  
+- **Blockchain**: Ethereum (ENS + Chainlink CCIP).  
+- **Storage**: Walrus (Sui).  
+- **Payments**: PayPal PYUSD.  
+- **Infra/Deploy**: GitHub + Vercel.  
+
+---
+
+## 🔗 Protocol Usage
+
+**ENS**  
+- First application of ENS to crowdfunding & project milestones.  
+- Every project → ENS name; every milestone/supplier/lender → ENS subdomain.  
+- ENS names resolve across marketplace & project timelines.
+
+**Chainlink**  
+- First demonstration of QuickBooks → Chainlink CCIP → ENS project milestone flow.  
+- Invoices/revenue events in QuickBooks trigger smart contract releases to suppliers/lenders.  
+
+**PayPal (PYUSD)**  
+- Milestone payouts funded in PYUSD.  
+- Modeled PayPal “Pay Over Time” as a layaway/credit-style option for projects & services.  
+
+---
+
+## 🏗️ How It’s Made
+- The concept was developed with **ChatGPT** over several months.  
+- For the hackathon, we pivoted 3 days before kickoff to focus on **ENS + Chainlink** integration.  
+- Judges/tips from Chainlink team suggested using **v0.app (AI coding tool)** to accelerate build.  
+- Built 100% AI-assisted:  
+  - ChatGPT wrote the **prompts**  
+  - v0.app generated the **code + UI**  
+  - Synced to **GitHub + Vercel** automatically  
+- Two builds:  
+  1. First prototype (7h) — scrapped after merging issues.  
+  2. Final build (8–10h) — clean restart, stable + demo-ready.  
+- This is my **first GitHub code repo** (previous experience was only uploading PDFs).  
+
+---
+
+## 📸 Screenshots
+<p align="center">
+  <img src="assets/HubPal_final_home-page.png" width="70%">
+  <br/>
+  <img src="assets/HubPal_screenshot_create_project.png" width="70%">
+  <br/>
+  <img src="assets/HubPal_screenshot_ChainLink.png" width="70%">
+</p>
+
+More in `/assets`.
+
+---
+
+## 📚 Additional Resources
+Older repository with **business model notes & drafts**:  
+👉 [hubpal (original repo)](https://github.com/HalfHashd/hubpal)  
+
+---
+
+## 🚀 Mission
+> **Don’t we all want responsible projects?**  
+> Make the world safe from dumps and rugs!  
+
 
 ---
 
