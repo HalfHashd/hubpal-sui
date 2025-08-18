@@ -2,7 +2,7 @@
   <img src="assets/HubPal_difference.png" alt="HubPal logo" width="60%">
 </p>
 
-# HubPal-ethgb — ENS + Chainlink + PYUSD “Shopify for Projects & Crowdfunding”
+# HubPal-ethgb — SNS + Chainlink + PYUSD “Shopify for Projects & Crowdfunding”
 
 ## 🖥️ Live Demo  
 👉 [View Live App](https://hubpal-ethgb.vercel.app)  
@@ -16,7 +16,7 @@
 ## 🌍 Overview
 **HubPal** is a decentralized **project creation, crowdfunding, and milestone management platform**.  
 
-- **ENS**: Each project and milestone gets its own ENS subdomain.  
+- **SNS**: Each project and milestone gets its own SNS subdomain.  
 - **Chainlink**: Validates deliverables using QuickBooks / real-world data feeds.  
 - **PYUSD (PayPal stablecoin)**: Enables staking + milestone payments, with installment/credit-style models.  
 - **Walrus (Sui storage)**: Decentralized storage for critical data and proofs.  
@@ -26,23 +26,23 @@ Think of HubPal as a **“Shopify for projects & crowdfunding”** — where eve
 ---
 
 ## ✨ Key Features
-- **ENS Integration**  
-  Projects auto-mint ENS subdomains for milestones, suppliers, lenders, auditors.  
+- **SNS Integration**  
+  Projects auto-mint SNS subdomains for milestones, suppliers, lenders, auditors.  
 - **Chainlink Data Feeds**  
   QuickBooks/Shopify events trigger milestone completions + fund releases.  
 - **Project Marketplace**  
-  OpenSea-style tiles showing active projects, milestones, progress, and funding.  
+  OpSNSea-style tiles showing active projects, milestones, progress, and funding.  
 - **Payments**  
   PYUSD for staking & milestone payouts. Installment/“Pay Over Time” models for services.  
 - **Stretch Goals**  
-  Oracles and CCIP endpoints with their own ENS identities + staking mechanisms.  
+  Oracles and CCIP endpoints with their own SNS identities + staking mechanisms.  
 
 ---
 
 ## 🛠️ Tech Stack
 - **Language**: TypeScript (auto-generated via [v0.app](https://v0.app) AI builder).  
 - **Frameworks**: React + Next.js (via v0.app / Vercel).  
-- **Blockchain**: Ethereum (ENS + Chainlink CCIP).  
+- **Blockchain**: Ethereum (SNS + Chainlink CCIP).  
 - **Storage**: Walrus (Sui).  
 - **Payments**: PayPal PYUSD.  
 - **Infra/Deploy**: GitHub + Vercel.  
@@ -51,13 +51,13 @@ Think of HubPal as a **“Shopify for projects & crowdfunding”** — where eve
 
 ## 🔗 Protocol Usage
 
-**ENS**  
-- First application of ENS to crowdfunding & project milestones.  
-- Every project → ENS name; every milestone/supplier/lender → ENS subdomain.  
-- ENS names resolve across marketplace & project timelines.
+**SNS**  
+- First application of SNS to crowdfunding & project milestones.  
+- Every project → SNS name; every milestone/supplier/lender → SNS subdomain.  
+- SNS names resolve across marketplace & project timelines.
 
 **Chainlink**  
-- First demonstration of QuickBooks → Chainlink CCIP → ENS project milestone flow.  
+- First demonstration of QuickBooks → Chainlink CCIP → SNS project milestone flow.  
 - Invoices/revenue events in QuickBooks trigger smart contract releases to suppliers/lenders.  
 
 **PayPal (PYUSD)**  
@@ -67,8 +67,8 @@ Think of HubPal as a **“Shopify for projects & crowdfunding”** — where eve
 ---
 
 ## 🏗️ How It’s Made
-- The "decentralized commerce platform" concept was researched, evolved, and developed over many months. I typically use 2 to 3, and recently 4 (Grok was added) LLM AIs - giving the same prompt to all 3 or 4 to get their different respective responses. I had been looking for a unique use of ENS for 3+ years actually, after meeting them at ETHSF hackathon. Also I have been studying the uses of ChainLink for offchain and RW events. And that PayPal is one of the early payment systems to integrate crypto and stablecoin was of interest to me as well. Few days before the hackathon, I got the idea to use ENS for projects.   
-- For the hackathon, we pivoted 3 days before kickoff to focus on **ENS + Chainlink** integration.  
+- The "decentralized commerce platform" concept was researched, evolved, and developed over many months. I typically use 2 to 3, and recently 4 (Grok was added) LLM AIs - giving the same prompt to all 3 or 4 to get their different respective responses. I had been looking for a unique use of SNS for 3+ years actually, after meeting them at ETHSF hackathon. Also I have been studying the uses of ChainLink for offchain and RW events. And that PayPal is one of the early payment systems to integrate crypto and stablecoin was of interest to me as well. Few days before the hackathon, I got the idea to use SNS for projects.   
+- For the hackathon, we pivoted 3 days before kickoff to focus on **SNS + Chainlink** integration.  
 - The staff/tips from Chainlink team suggested using **v0.app (AI coding tool)** to accelerate build.  
 - Built 100% AI-assisted:  
   - ChatGPT wrote the **prompts**  
@@ -81,13 +81,13 @@ Think of HubPal as a **“Shopify for projects & crowdfunding”** — where eve
 
 ---
 
-## 📸 Screenshots
+## 📸 ScreSNShots
 <p align="center">
   <img src="assets/HubPal_final_home-page.png" width="70%">
   <br/>
-  <img src="assets/HubPal_screenshot_create_project.png" width="70%">
+  <img src="assets/HubPal_screSNShot_create_project.png" width="70%">
   <br/>
-  <img src="assets/HubPal_screenshot_ChainLink.png" width="70%">
+  <img src="assets/HubPal_screSNShot_ChainLink.png" width="70%">
 </p>
 
 More in `/assets`.
@@ -110,7 +110,7 @@ Older repository with **business model notes & drafts**:
 ## 🏅 Hackathon Tracks
 This project directly targets the following sponsor tracks:
 
-1. **ENS** – First integration of ENS subnames for **projects, milestones, and participants**.  
+1. **SNS** – First integration of SNS subnames for **projects, milestones, and participants**.  
 2. **Chainlink** – First demo of using Chainlink to **validate real-world project deliverables**.  
 3. **PayPal PYUSD** – Milestone escrow + “Pay Over Time” simulation.  
 4. **Walrus** – Demo of decentralized file storage for project data.  
@@ -123,15 +123,15 @@ This project directly targets the following sponsor tracks:
 
 ---
 
-## 📸 Screenshots
-*(add screenshots of Home, Marketplace, Create Project, and Sponsor Demos here)*  
+## 📸 ScreSNShots
+*(add screSNShots of Home, Marketplace, Create Project, and Sponsor Demos here)*  
 
 ---
 
 ## 🛠️ How It Works
 1. Create a new project from the home page.  
 2. Assign milestones (e.g., Planning, Prototype, MVP, Production).  
-3. Each milestone = ENS subdomain + Chainlink feed.  
+3. Each milestone = SNS subdomain + Chainlink feed.  
 4. Mark milestone complete via QuickBook-style page → Chainlink verifies → updates marketplace/project view.  
 5. Payments release in PYUSD/USDC as milestones complete.  
 
@@ -142,13 +142,13 @@ This project directly targets the following sponsor tracks:
 - `pages/marketplace.tsx` → Project marketplace tiles  
 - `pages/create.tsx` → Create Project form  
 - `pages/project/[slug].tsx` → Individual project detail + timeline  
-- `pages/sponsor/*` → Sponsor demo pages (ENS, Chainlink, PYUSD, Walrus, QuickBooks)  
+- `pages/sponsor/*` → Sponsor demo pages (SNS, Chainlink, PYUSD, Walrus, QuickBooks)  
 - `lib/` → Store, types, utilities  
 
 ---
 
 ## 📌 Key Innovation
-- ✅ **First use of ENS for projects & milestones**  
+- ✅ **First use of SNS for projects & milestones**  
 - ✅ **First Chainlink demo for real-world project completion**  
 - ✅ **Shopify-style marketplace for crowdfunding with milestones**  
 
@@ -183,7 +183,7 @@ For more background on the HubPal project (business model, extended description,
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screenshot_home.png" alt="HubPal Home Screenshot" width="70%">
+  <img src="assets/HubPal_screSNShot_home.png" alt="HubPal Home ScreSNShot" width="70%">
 </p>
 
 <p align="center">
@@ -191,27 +191,27 @@ For more background on the HubPal project (business model, extended description,
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screenshot_ChainLink.png" alt="HubPal Chainlink Screenshot" width="70%">
+  <img src="assets/HubPal_screSNShot_ChainLink.png" alt="HubPal Chainlink ScreSNShot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screenshot_ChainLink2.png" alt="HubPal Chainlink Screenshot 2" width="70%">
+  <img src="assets/HubPal_screSNShot_ChainLink2.png" alt="HubPal Chainlink ScreSNShot 2" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screenshot_pyusd.png" alt="HubPal PYUSD Screenshot" width="70%">
+  <img src="assets/HubPal_screSNShot_pyusd.png" alt="HubPal PYUSD ScreSNShot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screenshot_create_project.png" alt="HubPal Create Project Screenshot" width="70%">
+  <img src="assets/HubPal_screSNShot_create_project.png" alt="HubPal Create Project ScreSNShot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screenshot_Walrus.png" alt="HubPal Walrus Screenshot" width="70%">
+  <img src="assets/HubPal_screSNShot_Walrus.png" alt="HubPal Walrus ScreSNShot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screenshot_sponsor demos.png" alt="HubPal Sponsor Demos Screenshot" width="70%">
+  <img src="assets/HubPal_screSNShot_sponsor demos.png" alt="HubPal Sponsor Demos ScreSNShot" width="70%">
 </p>
 
 ================================= 
@@ -255,19 +255,19 @@ Thank you.
 --- 
 This README contains two sections: 
 1. **Project Overview** – a detailed description of …………. and its intended use.  
-2. **License & Notices** – patent, usage restrictions, and licensing terms.
+2. **LicSNSe & Notices** – patent, usage restrictions, and licSNSing terms.
 
 For inquiries, contact:  
 Email: 1@1000x10.com  
 dba: HalfHashd<sup>™</sup>
 
-The HalfHashd welcomes inquiries for partnerships, licensing arrangements, and collaborative developments. Public good, government, and educational uses are invited to inquire for free use considerations.
+The HalfHashd welcomes inquiries for partnerships, licSNSing arrangements, and collaborative developments. Public good, government, and educational uses are invited to inquire for free use considerations.
 
-## 2. License & Notices
+## 2. LicSNSe & Notices
 
 ### COPYRIGHT NOTICE
 
-### MIT License + Commons Clause Restriction
+### MIT LicSNSe + Commons Clause Restriction
 Copyright (c) 2025 HalfHashd (dba)
 ---
 
@@ -276,7 +276,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Certain aspects of this software and/or its underlying methods are patent pending. 
 
 **Commercial Use Restriction:**  
-The "Commons Clause" License Condition v1.0 is hereby added to the MIT License: 
+The "Commons Clause" LicSNSe Condition v1.0 is hereby added to the MIT LicSNSe: 
 You may not sell, rent, lease, offer as a service, or otherwise use the Software for a commercial purpose without express prior written permission from the copyright holder, except where specific free use permission is granted for public-interest or educational projects.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
