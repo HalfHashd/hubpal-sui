@@ -6,6 +6,11 @@ Read me: This README.md is a clone of hubpal-ethgb (08.15-17) which was the proj
   <img src="assets/HubPal_difference.png" alt="HubPal logo" width="60%">
 </p>
 
+<p align="center">
+  <img src="assets/logo-where_world_builds_eth.jpg" alt="HubPal logo" width="20%">
+</p>
+
+
 # HubPal-sui — SNS + Chainlink + PYUSD “Shopify for Projects & Crowdfunding”
 
 ## 🖥️ Live Demo  
@@ -187,7 +192,7 @@ For more background on the HubPal project (business model, extended description,
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_home.png" alt="HubPal Home ScreSNShot" width="70%">
+  <img src="assets/HubPal_screSNShot_home.png" alt="HubPal Home Screenshot" width="70%">
 </p>
 
 <p align="center">
@@ -195,27 +200,27 @@ For more background on the HubPal project (business model, extended description,
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_ChainLink.png" alt="HubPal Chainlink ScreSNShot" width="70%">
+  <img src="assets/HubPal_screSNShot_ChainLink.png" alt="HubPal Chainlink Screenshot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_ChainLink2.png" alt="HubPal Chainlink ScreSNShot 2" width="70%">
+  <img src="assets/HubPal_screSNShot_ChainLink2.png" alt="HubPal Chainlink Screenshot 2" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_pyusd.png" alt="HubPal PYUSD ScreSNShot" width="70%">
+  <img src="assets/HubPal_screSNShot_pyusd.png" alt="HubPal PYUSD Screenshot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_create_project.png" alt="HubPal Create Project ScreSNShot" width="70%">
+  <img src="assets/HubPal_screSNShot_create_project.png" alt="HubPal Create Project Screenshot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_Walrus.png" alt="HubPal Walrus ScreSNShot" width="70%">
+  <img src="assets/HubPal_screSNShot_Walrus.png" alt="HubPal Walrus Screenshot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_sponsor demos.png" alt="HubPal Sponsor Demos ScreSNShot" width="70%">
+  <img src="assets/HubPal_screSNShot_sponsor demos.png" alt="HubPal Sponsor Demos Screenshot" width="70%">
 </p>
 
 ================================= 
