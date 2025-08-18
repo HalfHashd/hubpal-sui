@@ -2,6 +2,10 @@
   <img src="assets/HubPal_difference.png" alt="HubPal logo" width="60%">
 </p>
 
+Read me: This README.md is a clone of hubpal-ethgb (08.15-17) which was the project done at the hackathon. Here, we (GPT4 and V0 and me) simply replaced ENS to SNS and .eth to .sui. At the new /hubpal-sui2, we will rebuild fucused on Walrus* and SUI. I am not a coder or trained engineer, but I am near peerless in imagining new use cases, new systems, with a focus on mating the blockchain + AI + the Woo. Yes. ; ) ... I know of SUI*, but have only just begun to dig in, esp. after Daniel L's (dev ops) presentation of Walrus - SUI mission to be, im my words: the d/d/d (decentralized-distributed-data) to be as "maximally-feasible" as possible. (*Raoul Pal, and his maxi macro exponetial age thesis and his support of SUI. I agree.) With my minimally knowledge of Walrus and SUI, I have done a new use case and demo project at [GitHub Repo](https://github.com/HalfHashd/hubpal-sui2 08.18) 
+
+(The below is the clone.)  
+
 # HubPal-sui — SNS + Chainlink + PYUSD “Shopify for Projects & Crowdfunding”
 
 ## 🖥️ Live Demo  
