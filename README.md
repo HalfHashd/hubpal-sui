@@ -4,8 +4,8 @@
 
 # HubPal-ethgb — ENS + Chainlink + PYUSD “Shopify for Projects & Crowdfunding”
 
-[Live Demo on Vercel](https://vercel.com/halfhashds-projects/v0-hub-pal-2)  
-[GitHub Repository](https://github.com/HalfHashd/hubpal_v2)  
+👉 [View Live App](https://hubpal-ethgb.vercel.app)  
+👉 [GitHub Repo](https://github.com/HalfHashd/hubpal-ethgb)  
 
 ---
 
@@ -114,8 +114,8 @@ This project directly targets the following sponsor tracks:
 ---
 
 ## 🖥️ Live Demo
-👉 [View Live App](https://v0.app/chat/no-content-fY03UScKZ5V)  
-👉 [GitHub Repo](https://github.com/HalfHashd/hubpal_v2)  
+👉 [View Live App](https://hubpal-ethgb.vercel.app)  
+👉 [GitHub Repo](https://github.com/HalfHashd/hubpal-ethgb)  
 
 ---
 
