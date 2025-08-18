@@ -9,7 +9,7 @@
 👉 [GitHub Repo](https://github.com/HalfHashd/hubpal-ethgb)  
 
 ## 📂 Continue Building on v0.app  
-👉 [Open in v0.app](https://v0.app/chat/projects/<1KPWSugTFD6>)  
+👉 [Open in v0.app](https://v0.app/chat/projects/1KPWSugTFD6)  
 
 ---
 
