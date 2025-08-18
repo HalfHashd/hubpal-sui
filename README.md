@@ -85,13 +85,13 @@ Think of HubPal as a **“Shopify for projects & crowdfunding”** — where eve
 
 ---
 
-## 📸 ScreSNShots
+## 📸 Screenshots
 <p align="center">
   <img src="assets/HubPal_final_home-page.png" width="70%">
   <br/>
-  <img src="assets/HubPal_screSNShot_create_project.png" width="70%">
+  <img src="assets/hubpal_screenshot_create_project.png" width="70%">
   <br/>
-  <img src="assets/HubPal_screSNShot_ChainLink.png" width="70%">
+  <img src="assets/hubpal_screenshot_ChainLink.png" width="70%">
 </p>
 
 More in `/assets`.
