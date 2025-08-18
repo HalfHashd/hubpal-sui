@@ -192,7 +192,7 @@ For more background on the HubPal project (business model, extended description,
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_home.png" alt="HubPal Home Screenshot" width="70%">
+  <img src="assets/hubpal_screenshot_home.png" alt="HubPal Home Screenshot" width="70%">
 </p>
 
 <p align="center">
@@ -204,7 +204,7 @@ For more background on the HubPal project (business model, extended description,
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_ChainLink2.png" alt="HubPal Chainlink Screenshot 2" width="70%">
+  <img src="assets/hubpal_screenshot_ChainLink2.png" alt="HubPal Chainlink Screenshot 2" width="70%">
 </p>
 
 <p align="center">
@@ -212,15 +212,15 @@ For more background on the HubPal project (business model, extended description,
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_create_project.png" alt="HubPal Create Project Screenshot" width="70%">
+  <img src="assets/hubpal_screenshot_create_project.png" alt="HubPal Create Project Screenshot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_Walrus.png" alt="HubPal Walrus Screenshot" width="70%">
+  <img src="assets/hubpal_screenshot_Walrus.png" alt="HubPal Walrus Screenshot" width="70%">
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_sponsor demos.png" alt="HubPal Sponsor Demos Screenshot" width="70%">
+  <img src="assets/hubpal_screenshot_sponsor demos.png" alt="HubPal Sponsor Demos Screenshot" width="70%">
 </p>
 
 ================================= 
