@@ -200,7 +200,7 @@ For more background on the HubPal project (business model, extended description,
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_ChainLink.png" alt="HubPal Chainlink Screenshot" width="70%">
+  <img src="assets/hubpal_screendshot_ChainLink.png" alt="HubPal Chainlink Screenshot" width="70%">
 </p>
 
 <p align="center">
@@ -208,7 +208,7 @@ For more background on the HubPal project (business model, extended description,
 </p>
 
 <p align="center">
-  <img src="assets/HubPal_screSNShot_pyusd.png" alt="HubPal PYUSD Screenshot" width="70%">
+  <img src="assets/hubpal_screenshot_pyusd.png" alt="HubPal PYUSD Screenshot" width="70%">
 </p>
 
 <p align="center">
