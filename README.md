@@ -2,7 +2,7 @@
   <img src="assets/HubPal_difference.png" alt="HubPal logo" width="60%">
 </p>
 
-# HubPal-ethgb — SNS + Chainlink + PYUSD “Shopify for Projects & Crowdfunding”
+# HubPal-sui — SNS + Chainlink + PYUSD “Shopify for Projects & Crowdfunding”
 
 ## 🖥️ Live Demo  
 👉 [View Live App](https://hubpal-ethgb.vercel.app)  
