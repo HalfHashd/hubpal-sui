@@ -4,7 +4,7 @@ At the new /hubpal-sui2, we will rebuild fucused on Walrus* and SUI. I am not a 
 
 (*Raoul Pal, and his maxi macro exponetial age thesis and his support of SUI. I agree.) Today 08.18: Based on my beginning knowledge of Walrus and SUI, I have done a modified and new use case and demo project, with a bit different tack, for SNS and Walrus, at https://github.com/HalfHashd/hubpal-sui2 (New ETA is 08.21) 
 
-**Read me2: The replacement attempt broke the demo ( at https://github.com/HalfHashd/hubpal-sui ) so see the /hubpal-ethgb for the ENS and .eth version. I will now build https://github.com/HalfHashd/hubpal-sui2 (New ETA is 08.21) with a bit diff. strategy-after my first deep dive into Move and SUI ATM. That MOVE is OOP will change how HubPal.org concept will be architected. Imagine: Associating select object-types with SNS .sui functions, and to "micro oracle" to RW events, QuickBook, real estate management apps like Yaardi, etc. etc.! {But, I digress.} 
+**Read me2: The replacement attempt broke the demo ( at https://github.com/HalfHashd/hubpal-sui ) so see the /hubpal-ethgb for the ENS and .eth version. I will now build https://github.com/HalfHashd/hubpal-sui2 (New ETA is 08.21) with a bit diff. strategy-after my first deep dive into Move and SUI ATM. That MOVE is OOP will change how HubPal.org concept will be architected. Imagine: Associating select object-types with SNS .sui functions, and to "micro oracle" to RW events, QuickBook, real estate management apps like Yardi, etc. etc.! {But, I digress.} 
 
 (The rest of do README, the below is the "SNS SUI" clone of hubpal-ethgb.)  
 
