@@ -16,7 +16,7 @@ At the new /hubpal-sui2, we will rebuild fucused on Walrus* and SUI. I am not a 
   <img src="assets/logo-where_world_builds_eth.jpg" alt="HubPal logo" width="20%">
 </p>
 
-# HubPal-sui — SNS + Chainlink (will not be used, but now want to replace with SUI-Walru(?) "oracles" to RW) + PYUSD (not using ) “Shopify for Projects & Crowdfunding”
+# HubPal-sui — SNS + Chainlink (will not be used, but now want to replace with SUI-SNS and Walrus using "oracles" to RW) + PYUSD (not using ) “Shopify" for Projects & Crowdfunding
 
 ## 🖥️ Live Demo  
 👉 [View Live App](https://hubpal-ethgb.vercel.app)  
