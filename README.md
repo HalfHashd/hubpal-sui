@@ -4,7 +4,7 @@ At the new /hubpal-sui2, we will rebuild fucused on Walrus* and SUI. I am not a 
 
 (*Raoul Pal, and his maxi macro exponetial age thesis and his support of SUI. I agree.) Today 08.18: Based on my beginning knowledge of Walrus and SUI, I have done a modified and new use case and demo project, with a bit different tack, for SNS and Walrus, at https://github.com/HalfHashd/hubpal-sui2 
 
-**Read me2: The replacement attempt broke the demo ( at https://github.com/HalfHashd/hubpal-sui ) so see the /hubpal-ethgb for the ENS adn .eth version. I will now build https://github.com/HalfHashd/hubpal-sui2 with a diff. strategy. ]
+**Read me2: The replacement attempt broke the demo ( at https://github.com/HalfHashd/hubpal-sui ) so see the /hubpal-ethgb for the ENS and .eth version. I will now build https://github.com/HalfHashd/hubpal-sui2 with a diff. strategy. ]
 
 (The following is the clone.)  
 
